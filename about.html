@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="stayl.css">
+    <title>9_class</title>
+  </head>
+<body>
+    
+
+  <div class="cont">
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <img class="logo"  src="class.png" alt="">
+            <a class="navbar-brand" href="Home.html">9._class._</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="Home.html">Գլխավոր</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="User.html">Աշակերտներ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">Պատվոտախտակ</a>
+                </li>
+              </ul>
+           
+          </div>
+        </div>
+      </nav>
+    
+
+      <div>
+        <style>
+        .accordion {
+        
+       
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+          transition: 0.4s;
+        }
+        
+       
+        
+        .panel {
+          padding: 0 18px;
+          display: none;
+          background-color: white;
+          overflow: hidden;
+        }
+        </style>
+       
+        
+       
+        
+        <button class="accordion">Մարիամ Ավետիսյան</button>
+        <div class="panel">
+          <p class="p"> Պարգևատրվել է՝<br>
+            1.2015-2022 ուսումնական տարիներին գերազանց առաջադիմություն և լավ վարք ցուցաբերելու համար:<br>
+            2.«ԵՍ» կրթական հիմնադրամի  փիսքելային աշխատանքի դասերին  աշխատասիրություն, ինքնուրույն աշխատանքի հմտություն և ակտիվություն ցուցաբերելու համար։<br>
+            3.ՀԵՊ առարկայական օլիմպիադայի հանրապետական փուլի բարձր արդյունքների համար։<br>
+            4.«Շիրակացու Ճեմարան»-ի կազմակերպած հայոց պատմություն օլիմպիադայի բարձև արդյունքների համար։
+          </p>
+        </div>
+       <br>
+        <button class="accordion">Էմին Թևոսյան</button>
+        <div class="panel">
+          <p class="p"> Պարգևատրվել է՝<br>
+            1.2015-2022 ուսումնական տարիներին գերազանց առաջադիմություն և լավ վարք ցուցաբերելու համար:<br>
+            2.Ռ․ ԼԵզու առարկայական օլիմպիադայի շրջանային փուլի բարձր արդյունքների համար։<br>
+            3.«Շիրակացու Ճեմարան»-ի կազմակերպած հայոց պատմություն օլիմպիադայի բարձև արդյունքների համար։<br>
+            4.Գծին հետևող և իրեր տեղափոխող ռոբոտների մրցույթում հաղթող ճանաչվելու համար:</p>
+       </div>
+        <br>
+        <button class="accordion">Միլենա Ղազարյան</button>
+        <div class="panel">
+          <p class="p">Պարգևատրվել է՝<br>
+            2015-2020 ուսումնական տարիներին գերազանց առաջադիմություն և լավ վարք ցուցաբերելու համար:<br></p>
+        </div>
+        <br>
+        <button class="accordion">Արա Մուսայելյան</button>
+        <div class="panel">
+          <p class="p">Պարգևատրվել է՝<br>
+             Տեխնոճամբարում Մաթ․ Տրամաբանության դասերին ամենահամառ հետաքրքրասիրության, խնդիրներին առանձնահատուկ հումորով մոտենալու և ակտիվություն ցուցաբերելու համար:</p>
+        </div>
+        <button class="accordion">Վահե Ասրիբաբայան</button>
+        <div class="panel">
+          <p class="p"> Պարգևատրվել է՝<br>
+            Գծին հետևող և իրեր տեղափոխող ռոբոտների մրցույթում հաղթող ճանաչվելու համար:
+          </p>
+        </div>
+       <br>
+      
+
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("activ");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script></div>
+     
+      </div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+.cont{
+    margin-left: 50px;
+    margin-right: 60px;
+    text-align: start;
+}
+.table{
+flex-wrap: wrap;
+}
+
+
+
+
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  .cardr {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;    text-align: center;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+h1{
+margin-left: 3px;
+margin-right: 3px;
+  }
+  
+
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+.bt:hover, a:hover {
+    opacity: 0.7;
+  }
+.logo{
+height: 80px;
+width: 80px;
+}
