@@ -44,61 +44,125 @@
 
 <div class="cont">
 <h1>Դասացուցակ</h1>
-    <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Երկուշաբթի</th>
-            <th scope="col">Երեքշաբթի</th>
-            <th scope="col">Չորեքշաբթի</th>
-            <th scope="col">Հինգշաբթի</th>
-            <th scope="col">Ուրբաթ</th>
+    
 
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Ռ․ ԼԵզու</td>
-          </tr>
-        </tbody>
-        <tbody>
-            <tr>
-              <th scope="row">2</th>
-              <td>Հանրահաշիվ</td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <th scope="row">3</th>
-              <td>Ֆիզկուլտուրա</td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <th scope="row">4</th>
-              <td>Գրականություն</td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <th scope="row">5</th>
-              <td>Հ․ Պատմություն</td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <th scope="row">6</th>
-              <td>Անգլերեն</td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <th scope="row">7</th>
-              <td>ՆԶՊ</td>
-            </tr>
-          </tbody>
-      </table>
+
+
+
+      <div>
+        <style>
+        .accordion {
+        
+       
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+          transition: 0.4s;
+        }
+        
+       
+        
+        .panel {
+          padding: 0 18px;
+          display: none;
+          background-color: white;
+          overflow: hidden;
+        }
+        </style>
+       
+        
+       
+       <button class="accordion">Երկուշաբթի</button>
+       <div class="panel">
+         <p class="p">
+           1.Ռ․ ԼԵզու<br>
+           2.Հանրահաշիվ<br>
+           3.Ֆիզկուլտուրա<br>
+           4.Գրականություն<br>
+           5.Հ․ Պատմություն<br>
+           6.Անգլերեն<br>
+           7.ՆԶՊ<br>
+         </p>
+       </div>
+      <br>
+      <button class="accordion">Երեքշաբթի</button>
+       <div class="panel">
+         <p class="p">
+           1.<br>
+           2.<br>
+           3.<br>
+           4.<br>
+           5.<br>
+           6.<br>
+           7.<br>
+         </p>
+       </div>
+      <br>
+      <button class="accordion">Չորեքշաբթի</button>
+      <div class="panel">
+        <p class="p">
+          1.<br>
+          2.<br>
+          3.<br>
+          4.<br>
+          5.<br>
+          6.<br>
+          7.<br>
+        </p>
+      </div>
+     <br>
+     <button class="accordion">Հինգշաբթի</button>
+     <div class="panel">
+       <p class="p">
+         1.<br>
+         2.<br>
+         3.<br>
+         4.<br>
+         5.<br>
+         6.<br>
+         7.<br>
+       </p>
+     </div>
+    <br>
+    <button class="accordion">Ուրբաթ</button>
+    <div class="panel">
+      <p class="p">
+        1.<br>
+        2.<br>
+        3.<br>
+        4.<br>
+        5.<br>
+        6.<br>
+        7.<br>
+      </p>
+    </div>
+   <br>
+ 
+      
+
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("activ");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script></div>
+     
+      </div>
+
 
 
 
