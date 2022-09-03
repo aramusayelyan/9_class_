@@ -8,7 +8,11 @@ flex-wrap: wrap;
 }
 
 
+.table{
+size: 100%;
 
+flex-wrap: nowrap;
+}
 
 
 .cards{
@@ -51,6 +55,15 @@ margin-right: 3px;
 height: 80px;
 width: 80px;
 }
-.hi{
+
+.by{
+    display: flex;
+    flex-wrap: nowrap;
+text-align: end;
+}
+.accordion{
+height: 50%;
+}
+.tn{
 text-align: end;
 }
